@@ -1,0 +1,1 @@
+# odooimp-how-to-use-manual
