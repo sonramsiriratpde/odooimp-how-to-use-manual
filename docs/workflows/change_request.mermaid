@@ -1,0 +1,20 @@
+flowchart TD
+
+    Start((Start))
+    Submitted[Submitted]:::todo
+    ImpactAssessed[Impact Assessed]:::inprogress
+    Approved[Approved]:::inprogress
+    Implemented[Implemented]:::done
+    Rejected[Rejected]:::done
+
+    Start --> |Create| Submitted
+    Submitted --> |Refine| ImpactAssessed
+    ImpactAssessed --> |Start Development| Approved
+    ImpactAssessed --> |Reject| Rejected
+    Approved --> |Implement| Implemented
+    Approved --> |Reject| Rejected
+    Rejected --> |Resubmit| Submitted
+
+    classDef todo fill:#EBEDF0,stroke:#C0C1C2,stroke-width:2px;
+    classDef inprogress fill:#EAE6FF,stroke:#403294,stroke-width:2px;
+    classDef done fill:#E3FCEF,stroke:#006644,stroke-width:2px;

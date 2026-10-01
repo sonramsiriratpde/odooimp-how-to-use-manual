@@ -1,0 +1,25 @@
+flowchart TD
+
+    Start((START))
+    Open[Open]:::todo
+    Triaged[Triaged]:::inprogress
+    InFix[In Fix]:::inprogress
+    ReadyForRetest[Ready for Retest]:::inprogress
+    Verified[Verified]:::done
+    Closed[Closed]:::done
+    ReOpen[Re-Open]:::todo
+
+    Start --> |Create| Open
+    Open --> |Refine| Triaged
+    Triaged --> |Start Development| InFix
+    InFix --> |Submit Fix| ReadyForRetest
+    ReadyForRetest --> |Verify Fix| Verified
+    Verified --> |Close| Closed
+
+    ReadyForRetest --> |Fail Retest| InFix
+    Closed --> |Reopen| ReOpen
+    ReOpen --> |Re-triage| Triaged
+
+    classDef todo fill:#EBEDF0,stroke:#C0C1C2,stroke-width:2px;
+    classDef inprogress fill:#EAE6FF,stroke:#403294,stroke-width:2px;
+    classDef done fill:#E3FCEF,stroke:#006644,stroke-width:2px;

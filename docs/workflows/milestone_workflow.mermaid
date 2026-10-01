@@ -1,0 +1,15 @@
+flowchart TD
+
+    Start((Start))
+    Planned[Planned]:::todo
+    AtRisk[At Risk]:::inprogress
+    Achieved[Achieved]:::done
+
+    Start --> |Create| Planned
+    Planned --> |Flag At Risk| AtRisk
+    Planned --> |Achieve| Achieved
+    AtRisk --> |Resolve Risk| Planned
+
+    classDef todo fill:#EBEDF0,stroke:#C0C1C2,stroke-width:2px;
+    classDef inprogress fill:#EAE6FF,stroke:#403294,stroke-width:2px;
+    classDef done fill:#E3FCEF,stroke:#006644,stroke-width:2px;

@@ -1,17 +1,15 @@
 # ODOOIMP — คู่มือการใช้งาน Jira Project
 
-คู่มือการทำงานสำหรับ Jira Project **Odoo Implementation Phase** (คีย์โปรเจกต์ `ODOOIMP`, ไซต์ `pde-main-team.atlassian.net`) ซึ่งครอบคลุมการดำเนินโครงการ Odoo ERP ของ PEM/PEMC
-
-คู่มือนี้ควบคุมเวอร์ชันผ่าน Repository นี้แทนการใช้ Confluence — ดูขั้นตอนการเปลี่ยนแปลงด้านล่าง
+คู่มือการทำงานสำหรับ Jira Project **Odoo Implementation Phase** (คีย์โปรเจกต์ `ODOOIMP`, ไซต์ `pde-main-team.atlassian.net`) ซึ่งครอบคลุมการดำเนินโครงการ Implement Odoo ERP ของ PEM/PEMC
 
 ## สารบัญ
 
 | เอกสาร | เนื้อหา |
-|---|---|
-| [ประเภท Issue](docs/issue-types-th.md) | Issue Type แต่ละประเภทใช้ทำอะไร เมื่อไหร่ควรใช้ และฟิลด์สำคัญของแต่ละประเภท |
-| [ฟิลด์อ้างอิง](docs/field-reference-th.md) | ฟิลด์ Custom Field ทั้งหมด พร้อม Field ID ประเภทข้อมูล และค่าที่อนุญาต ดึงตรงจากการตั้งค่าจริงของโปรเจกต์ |
-| [เวิร์กโฟลว์](docs/workflows-th.md) | สถานะและชื่อ Transition ของทุก Issue Type |
-| [ตารางสปรินต์](docs/sprint-schedule-th.md) | ปฏิทินสปรินต์ทั้ง 29 สปรินต์ ตั้งแต่ 21 ก.ย. 2026 – 29 ต.ค. 2027 |
+| --- | --- |
+| [ประเภท Issue](docs/issue-types.md) | Issue Type แต่ละประเภทใช้ทำอะไร เมื่อไหร่ควรใช้ และฟิลด์สำคัญของแต่ละประเภท |
+| [ฟิลด์อ้างอิง](docs/field-reference.md) | ฟิลด์ Custom Field ทั้งหมด พร้อม Field ID ประเภทข้อมูล และค่าที่อนุญาต |
+| [เวิร์กโฟลว์](docs/workflows.md) | สถานะและชื่อ Transition ของทุก Issue Type |
+| [ตารางสปรินต์](docs/sprint-schedule.md) | ปฏิทิน 29 สปรินต์ ตั้งแต่ 21 ก.ย. 2026 – 31 ต.ค. 2027 |
 
 ## ข้อมูลโดยสรุป
 

@@ -1,0 +1,15 @@
+flowchart TD
+
+    Start((Start))
+    BackLogs[Backlogs]:::todo
+    InProgress[In Progress]:::inprogress
+    Done[Done]:::done
+
+    Start -->|Create| BackLogs
+    BackLogs -->|Start Progress| InProgress
+    InProgress -->|Complete Epic| Done
+    Done -->|Reopen Epic| BackLogs
+
+    classDef todo fill:#EBEDF0,stroke:#C0C1C2,stroke-width:2px;
+    classDef inprogress fill:#EAE6FF,stroke:#403294,stroke-width:2px;
+    classDef done fill:#E3FCEF,stroke:#006644,stroke-width:2px;

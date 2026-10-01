@@ -1,0 +1,17 @@
+flowchart TD
+
+    Start((START))
+    TODO[TODO]:::todo
+    InProgress[In Progress]:::inprogress
+    InReview[In Review]:::inprogress
+    Done[Done]:::done
+
+    Start --> |Create| TODO
+    TODO --> |Start Progress| InProgress
+    InProgress --> |Submit for Review| InReview
+    InReview --> |Approve| Done
+    InReview --> |Request Changes| InProgress
+
+    classDef todo fill:#EBEDF0,stroke:#C0C1C2,stroke-width:2px;
+    classDef inprogress fill:#EAE6FF,stroke:#403294,stroke-width:2px;
+    classDef done fill:#E3FCEF,stroke:#006644,stroke-width:2px;
